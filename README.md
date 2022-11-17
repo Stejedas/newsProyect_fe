@@ -14,7 +14,7 @@ Please run:
 
 Run the application in development mode.
 
-Please run through Open With Live Server in Visual Studio Code or with XMPP.
+Please run through Open With Live Server in Visual Studio Code.
 
 ## Built with 🛠️
 
