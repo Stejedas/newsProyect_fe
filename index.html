@@ -1,0 +1,31 @@
+<!DOCTYPE html > 
+<html lang="en">
+    <head>
+        <meta charset="UFT-8">
+        <title>newsProyect</title>
+        <link rel="stylesheet" href="main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="./node_modules/angular/angular.min.js"></script>
+        <script src="./node_modules/angular-route/angular-route.min.js"></script>
+        </head>
+    <body ng-app="myApp" >
+
+        <nav class="navbar fixed-top navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link fs-4 mx-2 px-4" aria-current="page" href="#!">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-4 mx-2 px-4" href="#!archivate">Archivate</a>
+                  </li>
+              </div>
+        </nav>
+
+        <div ng-view class="container_view"></div>
+        <script src="app.js"></script>
+        <script src="controller.js"></script>
+        <script src="service.js"></script>
+   
+    </body>
+</html>

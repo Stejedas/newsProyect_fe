@@ -1,0 +1,48 @@
+<div ng-if="loading" ng-init="init()">
+  <div class="container_loading">
+    <h4><strong>Wait a moment, loading news...</strong></h4>
+    <div
+      class="spinner-border mt-2 fs-3"
+      style="width: 5rem; height: 5rem"
+      role="status"
+      aria-hidden="true"
+    ></div>
+  </div>
+</div>
+<div class="container_cards">
+  <div
+    ng-repeat="new in data"
+    class="cardNew card"
+  >
+  <div class="card-header">
+    <p class="dateCard">{{new.date | date}} - Auth: {{new.author}}</p>
+  </div>
+  <div class="card-body">
+    <div class="card-title">
+      <h2>{{new.title}}</h2>
+      <b
+        ><i><p class="descriptionCard">{{new.description}}</p></i></b
+      >
+    </div>
+
+    <p class="card-text">{{new.content}}</p>
+  </div>
+  <div class="card-footer text-muted">
+    <div class="container_buttonCard">
+        <i ng-if="mode.isArchivate"><p class="mx-3 dateArchivate">Archive Date: {{new.archiveDate | date}}</p></i>
+      <button
+        type="button"
+        ng-class="mode.class"
+        ng-click="changeStatus(new._id)"
+      >
+        {{mode.text}}
+      </button>
+    </div>
+  </div>
+  </div>
+</div>
+<div ng-if="newsArchivate.length === 0" class="container_noItems">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="60" height="60"><path fill-rule="evenodd" d="M10.25 2a8.25 8.25 0 105.28 14.59l5.69 5.69a.75.75 0 101.06-1.06l-5.69-5.69A8.25 8.25 0 0010.25 2zM3.5 10.25a6.75 6.75 0 1113.5 0 6.75 6.75 0 01-13.5 0z"></path></svg>
+  <h3>   {{mode.noNews}}</h3>
+</div>
+
