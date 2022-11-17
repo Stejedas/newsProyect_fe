@@ -4,17 +4,13 @@ margin: 0px;
 box-sizing: content-box;
 }
 
-.menu {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 a:hover {
     border-radius: 5px;
   background-color: lightgray;
+}
+
+.container_view{
+    padding-top: 75px
 }
 
 .container_cards {
@@ -74,12 +70,6 @@ a:hover {
     margin-left: 60px !important;
 }
 
-.contentCard{
-    margin-right: 40px !important;
-    margin-left: 40px !important;
-    margin-top: 20px !important;
-}
-
 .container_noItems{
     width: 100%;
     height: 80vh;
@@ -88,13 +78,10 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+
 .container_noItems h3{
     padding-top: 10px;
     margin-left: 20px;
-}
-
-.container_view{
-    padding-top: 75px
 }
 
 .dateArchivate{

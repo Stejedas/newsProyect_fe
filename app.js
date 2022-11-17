@@ -22,7 +22,7 @@ var miApp = angular
           isArchivate: true,
           class: "btn btn-outline-danger buttonCard",
           text: "Remove",
-          noNews: "Sorry, no new news, please come back later!"
+          noNews: "Sorry, no new news, please come back later!",
         },
         {
           mode: "exposed",
@@ -30,7 +30,7 @@ var miApp = angular
           isArchivate: false,
           class: "btn btn-outline-success buttonCard",
           text: "Archivate",
-          noNews: "Sorry, no news archivated."
+          noNews: "Sorry, no news archivated.",
         },
       ];
     },
